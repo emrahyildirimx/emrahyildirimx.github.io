@@ -1,0 +1,9 @@
+https://github.com/emr4h/CyberMachine
+https://github.com/emr4h/entropy
+https://github.com/emr4h/letmehack
+https://github.com/emr4h/Spam-Email-and-Url-Detection-Using-Machine-Learning
+https://github.com/emr4h/Malware-Detection-Using-Machine-Learning
+https://github.com/emr4h/virustotalApi
+https://github.com/emr4h/local-llm-qwen3
+https://github.com/emr4h/LinuxMemoryForensic
+https://github.com/emr4h/WhoisWho

@@ -1,0 +1,15 @@
+My passion for cybersecurity began during university, where I participated in Linux camps focused on cryptology, network technologies, and software development. Over time, this curiosity evolved into a true professional passion through hands-on projects, technical competitions, and internships.
+
+I started my career as a Cyber Security Analyst at Turkish Airlines Technology, where I spent 3 years in the aviation sector working on threat monitoring, incident response, malware analysis, security awareness, and threat hunting. My experience in 24/7 SOC operations significantly strengthened my decision-making skills and incident response capabilities in high-pressure environments.
+
+In 2025, I transitioned to Kuveyt Türk Participation Bank as a Cyber Security Incident Responder. In the banking sector, I actively contribute to threat hunting, incident triage, phishing analysis, digital forensics, correlation rule optimization, and the use of advanced security technologies such as SIEM, SOAR, EDR/XDR.
+
+My combined experience in both aviation and banking has given me a holistic view of cybersecurity operations across different critical industries. My goal is not only to respond to threats quickly and accurately, but also to continuously improve organizational security posture through analytical thinking and a proactive mindset.
+
+Key highlights:
+• Winner of Apple’s WWDC22 Swift Student Challenge
+• Graduate of Turkish Airlines Cyber Take-Off program
+• Holder of global certifications including CEH, ECSA, CCFH
+• Strong hands-on experience in threat analysis, malware analysis, and security automation
+
+I am passionate about learning emerging technologies, enhancing security processes, and contributing to more resilient cybersecurity architectures across organizations.

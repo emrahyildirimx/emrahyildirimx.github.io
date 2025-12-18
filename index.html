@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Emrah Yıldırım - Cybersecurity Professional</title>
+    <meta name="description"
+        content="Cybersecurity Incident Responder specializing in threat hunting, malware analysis, and security automation." />
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "card-dark": "#1c2632",
+                        "border-dark": "#2a3b4f"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+
+    <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Particles CSS -->
+    <style>
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body class="font-display antialiased bg-background-dark text-white">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+
+        <!-- Header -->
+        <!-- Header / Navbar -->
+        <!-- Header / Navbar -->
+        <header class="border-b border-[#233648] bg-[#111a22] sticky top-0 z-50">
+            <div class="max-w-[1200px] mx-auto px-4 lg:px-10 flex items-center justify-between whitespace-nowrap py-3">
+                <div class="flex items-center gap-4 text-white">
+                    <div class="size-8 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-[32px]">shield</span>
+                    </div>
+                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Emrah Yıldırım</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <nav class="hidden md:flex items-center gap-6">
+                        <a class="text-primary text-sm font-bold leading-normal" href="index.html">Home</a>
+                        <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="certificates/code.html">Certificates</a>
+                        <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="experience/code.html">Experience</a>
+                        <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="projects/code.html">Projects</a>
+                        <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="achievements/code.html">Achievements</a>
+                    </nav>
+                    <a href="mailto:emrahyildirimx@icloud.com"
+                        class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] transition-all">
+                        <span class="truncate">Contact Me</span>
+                    </a>
+                    <button id="mobileMenuBtn" class="md:hidden text-white cursor-pointer">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="hidden md:hidden fixed inset-0 bg-black z-[9999]">
+            <div class="flex flex-col h-full bg-[#0d1419]">
+                <div class="flex items-center justify-between p-4 border-b border-[#233648]">
+                    <div class="flex items-center gap-4 text-white">
+                        <div class="size-8 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-[32px]">shield</span>
+                        </div>
+                        <h2 class="text-lg font-bold">Emrah Yıldırım</h2>
+                    </div>
+                    <button id="closeMobileMenu" class="text-white">
+                        <span class="material-symbols-outlined text-[32px]">close</span>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-2 p-6">
+                    <a href="index.html"
+                        class="text-white text-lg font-medium py-3 px-4 rounded-lg hover:bg-primary/10 transition-colors">Home</a>
+                    <a href="certificates/code.html"
+                        class="text-white text-lg font-medium py-3 px-4 rounded-lg hover:bg-primary/10 transition-colors">Certificates</a>
+                    <a href="experience/code.html"
+                        class="text-white text-lg font-medium py-3 px-4 rounded-lg hover:bg-primary/10 transition-colors">Experience</a>
+                    <a href="projects/code.html"
+                        class="text-white text-lg font-medium py-3 px-4 rounded-lg hover:bg-primary/10 transition-colors">Projects</a>
+                    <a href="achievements/code.html"
+                        class="text-white text-lg font-medium py-3 px-4 rounded-lg hover:bg-primary/10 transition-colors">Achievements</a>
+                    <a href="mailto:emrahyildirimx@icloud.com"
+                        class="mt-4 flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold hover:bg-primary/90 transition-colors">
+                        Contact Me
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- Hero Section with Dotted Background -->
+        <div class="w-full px-4 sm:px-10 py-12 md:py-20 bg-[#111a22] relative overflow-hidden">
+            <!-- Particles.js Background -->
+            <div id="particles-js"></div>
+
+            <!-- Main Content -->
+            <div class="relative z-10 max-w-[1200px] mx-auto">
+                <div class="layout-content-container flex flex-col flex-1">
+
+                    <!-- Hero Section -->
+                    <div class="@container mb-12">
+                        <div
+                            class="flex flex-col-reverse gap-6 py-10 @[864px]:flex-row @[864px]:items-center @[864px]:gap-12">
+                            <!-- Text Content -->
+                            <div class="flex flex-col gap-6 flex-1 @[480px]:gap-8">
+                                <div class="flex flex-col gap-4 text-left">
+                                    <div
+                                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 w-fit">
+                                        <span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                                        <span
+                                            class="text-xs font-semibold text-primary uppercase tracking-wide">Cybersecurity
+                                            Professional</span>
+                                    </div>
+                                    <h1
+                                        class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[864px]:text-6xl">
+                                        Hi, I'm <span class="text-primary">Emrah.</span>
+                                    </h1>
+                                    <h2
+                                        class="text-[#92adc9] text-base font-normal leading-relaxed @[480px]:text-lg max-w-[600px]">
+                                        Cybersecurity Incident Responder | Threat Hunter | Security Automation
+                                        Enthusiast.
+                                        Passionate about defending critical infrastructures in aviation and banking
+                                        sectors.
+                                    </h2>
+                                </div>
+                                <div class="flex flex-wrap gap-4">
+                                    <a href="mailto:emrahyildirimx@icloud.com"
+                                        class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-blue-600 text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors shadow-lg shadow-primary/25">
+                                        <span class="material-symbols-outlined mr-2 text-[20px]">mail</span>
+                                        <span class="truncate">Get In Touch</span>
+                                    </a>
+                                    <a href="projects/code.html"
+                                        class="flex items-center justify-center rounded-lg h-12 px-6 bg-[#233648] hover:bg-[#324d67] text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors border border-transparent dark:border-[#324d67]">
+                                        <span class="material-symbols-outlined mr-2 text-[20px]">code</span>
+                                        <span class="truncate">View Projects</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Hero Image -->
+                            <div class="w-full @[864px]:w-1/2 flex justify-center @[864px]:justify-end">
+                                <div class="relative w-full max-w-[400px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#233648] bg-center bg-cover"
+                                    style='background-image: url("./persenal_data/photo.jpeg");'>
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-[#111a22]/80 to-transparent opacity-60">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Access Cards -->
+                    <div class="flex flex-col gap-6 py-10">
+                        <div class="flex flex-col items-center text-center mb-8">
+                            <h2 class="text-white tracking-tight text-3xl font-bold leading-tight">Explore My Portfolio
+                            </h2>
+                            <p class="text-[#92adc9] mt-2 text-base">Discover my professional journey, skills, and
+                                achievements</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+                            <!-- Card 1: Certificates -->
+                            <a class="group flex flex-col gap-4 rounded-xl border border-[#324d67] bg-[#192633] p-6 transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+                                href="certificates/code.html">
+                                <div
+                                    class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-[28px]">verified</span>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="text-white text-lg font-bold leading-tight">Certificates</h2>
+                                    <p class="text-[#92adc9] text-sm font-normal leading-normal">CEH, ECSA, CCFH & more
+                                    </p>
+                                </div>
+                                <div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold">
+                                    Explore <span
+                                        class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </div>
+                            </a>
+
+                            <!-- Card 2: Work Experience -->
+                            <a class="group flex flex-col gap-4 rounded-xl border border-[#324d67] bg-[#192633] p-6 transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+                                href="experience/code.html">
+                                <div
+                                    class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-[28px]">work</span>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="text-white text-lg font-bold leading-tight">Work Experience</h2>
+                                    <p class="text-[#92adc9] text-sm font-normal leading-normal">Aviation & Banking
+                                        sectors
+                                    </p>
+                                </div>
+                                <div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold">
+                                    Explore <span
+                                        class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </div>
+                            </a>
+
+                            <!-- Card 3: Projects -->
+                            <a class="group flex flex-col gap-4 rounded-xl border border-[#324d67] bg-[#192633] p-6 transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+                                href="projects/code.html">
+                                <div
+                                    class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-[28px]">code</span>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="text-white text-lg font-bold leading-tight">Projects</h2>
+                                    <p class="text-[#92adc9] text-sm font-normal leading-normal">Open source security
+                                        tools
+                                    </p>
+                                </div>
+                                <div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold">
+                                    Explore <span
+                                        class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </div>
+                            </a>
+
+                            <!-- Card 4: Achievements -->
+                            <a class="group flex flex-col gap-4 rounded-xl border border-[#324d67] bg-[#192633] p-6 transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+                                href="achievements/code.html">
+                                <div
+                                    class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-[28px]">emoji_events</span>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="text-white text-lg font-bold leading-tight">Achievements</h2>
+                                    <p class="text-[#92adc9] text-sm font-normal leading-normal">Awards & Recognition
+                                    </p>
+                                </div>
+                                <div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold">
+                                    Explore <span
+                                        class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- About Section -->
+                    <div class="flex flex-col gap-6 py-10 bg-[#0d1419] rounded-2xl px-8 my-8">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <h2 class="text-white tracking-tight text-3xl font-bold leading-tight">About Me</h2>
+                        </div>
+
+                        <div class="prose prose-invert max-w-4xl mx-auto">
+                            <p class="text-[#92adc9] text-lg leading-relaxed mb-6">
+                                My passion for cybersecurity began during university, where I participated in Linux
+                                camps
+                                focused on cryptology, network technologies, and software development. Over time, this
+                                curiosity evolved into a true professional passion through hands-on projects, technical
+                                competitions, and internships.
+                            </p>
+
+                            <p class="text-[#92adc9] text-lg leading-relaxed mb-6">
+                                I started my career as a <strong class="text-white">Cyber Security Analyst at Turkish
+                                    Airlines Technology</strong>, where I spent 3 years in the aviation sector working
+                                on
+                                threat monitoring, incident response, malware analysis, security awareness, and threat
+                                hunting. My experience in 24/7 SOC operations significantly strengthened my
+                                decision-making
+                                skills and incident response capabilities in high-pressure environments.
+                            </p>
+
+                            <p class="text-[#92adc9] text-lg leading-relaxed mb-6">
+                                In 2025, I transitioned to <strong class="text-white">Kuveyt Türk Participation Bank as
+                                    a
+                                    Cyber Security Incident Responder</strong>. In the banking sector, I actively
+                                contribute
+                                to threat hunting, incident triage, phishing analysis, digital forensics, correlation
+                                rule
+                                optimization, and the use of advanced security technologies such as SIEM, SOAR, EDR/XDR.
+                            </p>
+
+                            <p class="text-[#92adc9] text-lg leading-relaxed mb-6">
+                                My combined experience in both aviation and banking has given me a holistic view of
+                                cybersecurity operations across different critical industries. My goal is not only to
+                                respond to threats quickly and accurately, but also to continuously improve
+                                organizational
+                                security posture through analytical thinking and a proactive mindset.
+                            </p>
+
+                            <div class="bg-[#1a2632] rounded-xl p-6 border border-[#233648] my-8">
+                                <h3 class="text-white text-xl font-bold mb-4">Key Highlights</h3>
+                                <ul class="space-y-3 text-[#92adc9] list-none">
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">emoji_events</span>
+                                        <span>Winner of Apple's WWDC22 Swift Student Challenge</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">flight_takeoff</span>
+                                        <span>Graduate of Turkish Airlines Cyber Take-Off program</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">verified</span>
+                                        <span>Holder of global certifications including CEH, ECSA, CCFH</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">security</span>
+                                        <span>Strong hands-on experience in threat analysis, malware analysis, and
+                                            security
+                                            automation</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <p class="text-[#92adc9] text-lg leading-relaxed italic">
+                                I am passionate about learning emerging technologies, enhancing security processes, and
+                                contributing to more resilient cybersecurity architectures across organizations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-border-dark py-12">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div
+                    class="flex items-center justify-center size-8 rounded bg-gray-200 dark:bg-card-dark text-gray-900 dark:text-white">
+                    <span class="font-bold text-sm">EY</span>
+                </div>
+                <p class="text-sm text-gray-500 dark:text-gray-400">© 2025 Emrah Yıldırım. All rights reserved.
+                </p>
+            </div>
+            <div class="flex items-center gap-6">
+                <a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/emr4h"
+                    target="_blank" rel="noopener">
+                    <span class="sr-only">Github</span>
+                    <svg aria-hidden="true" class="size-6" fill="currentColor" viewbox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a class="text-gray-400 hover:text-primary transition-colors"
+                    href="https://instagram.com/emrahyildirimx" target="_blank" rel="noopener">
+                    <span class="sr-only">Instagram</span>
+                    <svg aria-hidden="true" class="size-6" fill="currentColor" viewbox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="text-gray-400 hover:text-primary transition-colors" href="https://www.linkedin.com/in/emr4h/"
+                    target="_blank" rel="noopener">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg aria-hidden="true" class="size-6" fill="currentColor" viewbox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+        function openMobileMenu() {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenuFunc() {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+
+        // Close menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenuFunc);
+        });
+    </script>
+
+    <!-- Particles.js Initialization -->
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#137fec' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#137fec',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'grab' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    </div>
+</body>
+
+</html>
