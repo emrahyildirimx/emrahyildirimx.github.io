@@ -57,6 +57,21 @@
             background: #324d67;
         }
     </style>
+
+    <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Particles CSS -->
+    <style>
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
 </head>
 
 <body class="bg-background-dark text-white font-display overflow-x-hidden min-h-screen flex flex-col">
@@ -133,9 +148,7 @@
         <div
             class="w-full px-4 sm:px-10 py-12 md:py-20 flex flex-col items-center text-center bg-[#111a22] relative overflow-hidden">
             <!-- Background pattern -->
-            <div class="absolute inset-0 opacity-20 pointer-events-none"
-                style="background-image: radial-gradient(#137fec 1px, transparent 1px); background-size: 32px 32px;">
-            </div>
+            <div id="particles-js"></div>
 
             <div class="relative z-10 max-w-3xl flex flex-col gap-4">
                 <div
@@ -566,6 +579,48 @@
         </div>
     </footer>
 
+
+    <!-- Particles.js Initialization -->
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#137fec' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#137fec',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'grab' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
 </body>
 
 </html>
