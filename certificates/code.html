@@ -21,7 +21,7 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#137fec",
+                        "primary": "#10b981",
                         "background-light": "#f6f7f8",
                         "background-dark": "#101922",
                         "card-dark": "#1c2632",
@@ -52,7 +52,7 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #137fec;
+            background: #10b981;
         }
 
         /* Modal Styles */
@@ -291,6 +291,42 @@
                     </div>
                 </div>
 
+                <!-- eCIR Certificate -->
+                <div
+                    class="group relative flex flex-col items-center bg-[#192633] rounded-xl overflow-hidden shadow-lg border border-[#324d67] hover:border-primary/50 transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-full h-48 bg-gradient-to-br from-orange-900 to-orange-600 flex items-center justify-center p-8 relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-10"
+                            style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <span
+                            class="material-symbols-outlined text-8xl text-white opacity-30 relative z-10">local_fire_department</span>
+                    </div>
+                    <div class="p-6 w-full flex flex-col flex-1">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">
+                                Certified Incident Responder (eCIR)
+                            </h3>
+                            <span class="material-symbols-outlined text-primary">workspace_premium</span>
+                        </div>
+                        <div class="flex items-center gap-2 mb-4 text-sm text-[#92adc9]">
+                            <span class="material-symbols-outlined text-[16px]">business</span>
+                            <span>INE Security</span>
+                        </div>
+                        <p class="text-[#92adc9] text-sm mb-6 flex-1 leading-relaxed">
+                            Professional certification validating expertise in incident response, digital forensics,
+                            threat analysis, and security incident handling. Demonstrates proficiency in investigating
+                            and responding to cybersecurity incidents effectively.
+                        </p>
+                        <button
+                            onclick="openModal('../persenal_data/Sertifikalar/eCIR.pdf', 'Certified Incident Responder (eCIR)')"
+                            class="w-full py-3 rounded-lg bg-[#233648] text-white font-medium hover:bg-primary hover:text-white transition-all text-center flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-primary/20">
+                            <span>View Certificate</span>
+                            <span class="material-symbols-outlined text-[18px]">visibility</span>
+                        </button>
+                    </div>
+                </div>
+
                 <!-- ECSA Certificate -->
                 <div
                     class="group relative flex flex-col items-center bg-[#192633] rounded-xl overflow-hidden shadow-lg border border-[#324d67] hover:border-primary/50 transition-all duration-300 hover:-translate-y-2">
@@ -378,7 +414,7 @@
                     <div class="p-6 w-full flex flex-col flex-1">
                         <div class="flex items-start justify-between mb-3">
                             <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">
-                                81 Cyber Heroes Program
+                                81 Cyber Heroes
                             </h3>
                             <span class="material-symbols-outlined text-primary">workspace_premium</span>
                         </div>
@@ -413,7 +449,7 @@
                     <div
                         class="flex flex-col items-center text-center p-6 rounded-xl bg-[#192633] border border-[#233648]">
                         <span class="material-symbols-outlined text-4xl text-primary mb-3">verified</span>
-                        <h3 class="text-white text-2xl font-bold mb-2">4</h3>
+                        <h3 class="text-white text-2xl font-bold mb-2">5</h3>
                         <p class="text-[#92adc9] text-sm">Professional Certifications</p>
                     </div>
 
@@ -561,14 +597,14 @@
         particlesJS('particles-js', {
             particles: {
                 number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: '#137fec' },
+                color: { value: '#10b981' },
                 shape: { type: 'circle' },
                 opacity: { value: 0.5, random: false },
                 size: { value: 3, random: true },
                 line_linked: {
                     enable: true,
                     distance: 150,
-                    color: '#137fec',
+                    color: '#10b981',
                     opacity: 0.4,
                     width: 1
                 },
@@ -647,7 +683,7 @@
             ctx.fillStyle = 'rgba(16, 25, 34, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            ctx.fillStyle = '#137fec';
+            ctx.fillStyle = '#10b981';
             ctx.font = fontSize + 'px monospace';
 
             for (let i = 0; i < drops.length; i++) {
